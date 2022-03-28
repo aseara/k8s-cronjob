@@ -1,0 +1,6 @@
+domain: aseara.github.com
+layout:
+- go.kubebuilder.io/v3
+projectName: k8s-cronjob
+repo: github.com/aseara/k8s-cronjob
+version: "3"

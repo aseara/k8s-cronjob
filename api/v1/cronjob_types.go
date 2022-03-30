@@ -97,6 +97,9 @@ type CronJobStatus struct {
 //+kubebuilder:object:root=true
 //+kubebuilder:subresource:status
 
+// +kubebuilder:printcolumn:name="Policy",type=string,JSONPath=`.spec.concurrencyPolicy`
+// +kubebuilder:printcolumn:name="Age",type="date",JSONPath=".metadata.creationTimestamp"
+
 // CronJob is the Schema for the cronjobs API
 type CronJob struct {
 	metav1.TypeMeta   `json:",inline"`

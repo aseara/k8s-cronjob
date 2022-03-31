@@ -1,7 +1,6 @@
 package controllers
 
 import (
-	"context"
 	"reflect"
 	"time"
 
@@ -32,7 +31,6 @@ var _ = Describe("CronJob controller", func() {
 	Context("When updating CronJob Status", func() {
 		It("Should increase CronJob Status.Active count when new Jobs are created", func() {
 			By("By creating a new CronJob")
-			ctx := context.Background()
 			cronJob := &cronjobv1.CronJob{
 				TypeMeta: metav1.TypeMeta{
 					APIVersion: "batch.aseara.github.com/v1",

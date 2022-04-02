@@ -17,4 +17,12 @@ resources:
     defaulting: true
     validation: true
     webhookVersion: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: aseara.github.com
+  group: batch
+  kind: CronJob
+  path: github.com/aseara/k8s-cronjob/api/v2
+  version: v2
 version: "3"

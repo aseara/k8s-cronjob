@@ -20,6 +20,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
 	batchv1 "github.com/aseara/k8s-cronjob/api/v1"
+	batchv2 "github.com/aseara/k8s-cronjob/api/v2"
 	"github.com/aseara/k8s-cronjob/controllers"
 	//+kubebuilder:scaffold:imports
 )
@@ -33,6 +34,7 @@ func init() {
 	utilruntime.Must(clientgoscheme.AddToScheme(scheme))
 
 	utilruntime.Must(batchv1.AddToScheme(scheme))
+	utilruntime.Must(batchv2.AddToScheme(scheme))
 	//+kubebuilder:scaffold:scheme
 }
 

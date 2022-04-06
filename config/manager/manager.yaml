@@ -27,7 +27,7 @@ spec:
       securityContext:
         runAsNonRoot: true
       containers:
-      - command:
+      - command: 
         - /manager
         args:
         - --leader-elect

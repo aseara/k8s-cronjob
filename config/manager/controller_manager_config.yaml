@@ -7,5 +7,5 @@ metrics:
 webhook:
   port: 9443
 leaderElection:
-  leaderElect: true
+  leaderElect: false
   resourceName: 9c70c1c8.aseara.github.com

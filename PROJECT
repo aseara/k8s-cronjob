@@ -25,4 +25,12 @@ resources:
   kind: CronJob
   path: github.com/aseara/k8s-cronjob/api/v2
   version: v2
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: aseara.github.com
+  group: batch
+  kind: ProjectConfig
+  path: github.com/aseara/k8s-cronjob/api/v2
+  version: v2
 version: "3"

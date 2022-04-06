@@ -17,4 +17,4 @@ configMapGenerator:
 images:
 - name: controller
   newName: aseara/k8s-cronjob
-  newTag: v0.0.3
+  newTag: v0.0.4
